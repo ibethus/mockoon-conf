@@ -1,0 +1,11 @@
+:notitle:
+:docinfo: private
+:source-highlighter: highlight.js
+:autofit-option:
+:icons: font
+:revealjs_theme: white
+:revealjs_slideNumber: true
+:revealjs_history: true
+:revealjs_pdfseparatefragments: false
+:revealjs_width: 1080
+:customcss: css/custom.css
