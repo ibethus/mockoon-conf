@@ -9,3 +9,5 @@
 :revealjs_pdfseparatefragments: false
 :revealjs_width: 1080
 :customcss: css/custom.css
+
+= Hello, world !
