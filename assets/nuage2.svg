@@ -1,0 +1,16 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+	<title>nuages</title>
+	<defs>
+		<linearGradient id="g1" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(2.745,52.382,-89.505,4.691,282.631,104.573)">
+			<stop offset="0" stop-color="#f2f4f8"/>
+			<stop offset=".01" stop-color="#f2f4f8"/>
+			<stop offset="1" stop-color="#bebebe"/>
+		</linearGradient>
+	</defs>
+	<style>
+		.s0 { fill: url(#g1) } 
+	</style>
+	<g id="nuages">
+		<path id="Calque 6" class="s0" d="m8 152.8l184-1.3c0 0-15.6-109.2-52.7-51.3-0.6 0.9-27.9-133.8-63.2 25.8-0.3 1.5-24.3-78.4-68.1 26.8z"/>
+	</g>
+</svg>
