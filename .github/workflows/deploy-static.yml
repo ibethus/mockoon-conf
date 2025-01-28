@@ -15,6 +15,7 @@ jobs:
 
       - name: Copy static site to folder 📦
         run: |
+          mkdir -p slides/build/
           cp -r index.html assets css slides/build/
         working-directory: .
 
