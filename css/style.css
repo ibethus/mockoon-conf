@@ -70,6 +70,7 @@ header {
         bottom: 0;
         width: 100vw;
         left: 0;
+        z-index: -100;
     }
 
 
