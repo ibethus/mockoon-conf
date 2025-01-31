@@ -12,6 +12,9 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          fetch-tags: true
 
       - name: Copy static site to folder 📦
         run: |
@@ -21,22 +24,13 @@ jobs:
 
       - name: Create versions file 📄
         run: |
-          echo '<html lang="fr">
-          <head>
-              <meta charset="UTF-8">
-              <title>Versions</title>
-          </head>
-          <body>
-              <h1>Versions disponibles</h1>
-              <ul>' > versions.html
-          for d in slides/build/ ; do
-            if [ -d "$d" ] && [ "$d" != "reveal.js/" ] && [ "$d" != "slides/" ] && [ "$d" != "css/" ] && [ "$d" != "assets/" ]; then
-              version="${d%/}"
-              echo "<li><a href=\"$version\">$version</a></li>" >> versions.html
-            fi
+          echo '<link rel="stylesheet" href="css/versions.css"><html lang="fr"><head><meta charset="UTF-8"><title>Versions</title></head><body><h1>Versions</h1><ul>' > versions.html
+          git tag | while read -r tag; do
+            echo "$tag"
+            echo "<li><a href=/"$tag">$tag</a></li>" >> versions.html
           done
           echo '</ul></body></html>' >> versions.html
-        working-directory: .
+        working-directory: slides/build/
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
