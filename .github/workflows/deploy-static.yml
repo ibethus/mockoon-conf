@@ -19,24 +19,23 @@ jobs:
           cp -r index.html assets css slides/build/
         working-directory: .
 
-      - name: Create version index 📋
+      - name: Create versions file 📄
         run: |
-          echo "<!DOCTYPE html>
-          <html lang=\"fr\">
+          echo '<html lang="fr">
           <head>
-              <meta charset=\"UTF-8\">
+              <meta charset="UTF-8">
               <title>Versions</title>
           </head>
           <body>
               <h1>Versions disponibles</h1>
-              <ul>" > versions.html
+              <ul>' > versions.html
           for d in */ ; do
             if [ -d "$d" ] && [ "$d" != "reveal.js/" ] && [ "$d" != "slides/" ] && [ "$d" != "css/" ] && [ "$d" != "assets/" ]; then
               version="${d%/}"
               echo "<li><a href=\"$version\">$version</a></li>" >> versions.html
             fi
           done
-          echo "</ul></body></html>" >> versions.html
+          echo '</ul></body></html>' >> versions.html
         working-directory: slides/build/
 
       - name: Deploy 🚀
