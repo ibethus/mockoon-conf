@@ -29,14 +29,14 @@ jobs:
           <body>
               <h1>Versions disponibles</h1>
               <ul>' > versions.html
-          for d in */ ; do
+          for d in slides/build/ ; do
             if [ -d "$d" ] && [ "$d" != "reveal.js/" ] && [ "$d" != "slides/" ] && [ "$d" != "css/" ] && [ "$d" != "assets/" ]; then
               version="${d%/}"
               echo "<li><a href=\"$version\">$version</a></li>" >> versions.html
             fi
           done
           echo '</ul></body></html>' >> versions.html
-        working-directory: slides/build/
+        working-directory: .
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
