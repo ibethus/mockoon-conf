@@ -1,10 +1,10 @@
 body {
-    background-image: linear-gradient(to bottom, rgb(175, 225, 240) 30%, rgb(255, 186, 107));
+    background-image: linear-gradient(to bottom, #A6CDC6 40%, #3A6D8C, #001F3F);
     background-attachment: fixed;
 }
 
 h1 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Segoe UI', system-ui, sans-serif;
 }
 
 header {
@@ -13,6 +13,7 @@ header {
 }
 
 .nuage {
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.3));
     position: fixed;
 }
 
@@ -25,7 +26,7 @@ header {
 #nuage2 {
     right: 5%;
     top: 35%;
-    animation: floatNuage2 4s ease-in-out infinite;
+    animation: floatNuage2 3s ease-in-out infinite;
 }
 
 @keyframes floatNuage1 {
