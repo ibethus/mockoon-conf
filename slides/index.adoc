@@ -7,7 +7,8 @@
 :revealjs_slideNumber: true
 :revealjs_history: true
 :revealjs_pdfseparatefragments: false
-:revealjs_width: 1080
 :customcss: css/custom.css
 
 = Hello, world !
+
+include::1.intro.adoc[]

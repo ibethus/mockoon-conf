@@ -1,0 +1,18 @@
+[%notitle.introduction.background]
+== Introduction
+image::images/etoiles[background, size=fill]
+
+[.star-wars]
+****
+[.crawl]
+--
+[.titre]
+Mockoon : les bouchons contre attaquent
+
+Dans une galaxie très, très lointaine, les développeurs impériaux se retrouvaient soudainement sans accès à leur API...
+
+Une attaque surprise des Rebelles avait coupé leur connexion, plongeant l'Empire dans le chaos du debug.
+
+Armés de leurs claviers et d'un sens de l'humour gravé à la force, ils se lancent dans une quête épique pour rétablir l'ordre (et la connectivité) à la vitesse de la lumière.
+--
+****

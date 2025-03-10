@@ -1,0 +1,21 @@
+= Roadmap
+
+== Plan
+
+=== 0. Introduction
+* Petite mise en contexte (3min l'empire contre-attaque)
+* Dans une galaxie très, très lointaine, les développeurs impériaux se retrouvaient soudainement sans accès à leur API...
+* Une attaque surprise des Rebelles avait coupé leur connexion, plongeant l'Empire dans le chaos du debug.
+* Armés de leurs claviers et d'un sens de l'humour gravé à la force, ils se lancent dans une quête épique pour rétablir l'ordre (et la connectivité) à la vitesse de la lumière.
+
+=== 1. Qu'est-ce que Mockoon ?
+* Serveur de mock 
+* Un GUI
+* Une CLI
+
+==== 1.1 Présentation du GUI
+* Notion d'environnements
+* Notion d'endpoits
+** Configuration des endpoints (méthode, path, headers, body)
+** Configuration des réponses (status, headers, body -> template)
+
