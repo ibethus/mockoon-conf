@@ -1,36 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Gochi+Hand");
-
-@font-face {
-    font-family: 'Titillium Web';
-    font-style: normal;
-    font-weight: 400;
-    src: url(https://fonts.gstatic.com/s/titilliumweb/v15/NaPecZTIAOhVxoMyOr9n_E7fdM3mDaZRbryhsA.woff2) format('woff2');
-    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-    font-family: 'Titillium Web';
-    font-style: normal;
-    font-weight: 400;
-    src: url(https://fonts.gstatic.com/s/titilliumweb/v15/NaPecZTIAOhVxoMyOr9n_E7fdMPmDaZRbrw.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-    font-family: 'Titillium Bold';
-    font-style: normal;
-    font-weight: 900;
-    src: url(https://fonts.gstatic.com/s/titilliumweb/v15/NaPDcZTIAOhVxoMyOr9n_E7ffEDBGIVzY5abuWIGxA.woff2) format('woff2');
-    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-    font-family: 'Titillium Bold';
-    font-style: normal;
-    font-weight: 900;
-    src: url(https://fonts.gstatic.com/s/titilliumweb/v15/NaPDcZTIAOhVxoMyOr9n_E7ffEDBGItzY5abuWI.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
+@import url(star-wars.css);
+@import url(fonts.css);
 
 :root {
     --r-background-color: #e7e7e7;
@@ -82,113 +51,30 @@ ul li p {
     font-size: smaller;
 }
 
-section.introduction.background {
-    background-color: black;
-}
-
-.star-wars {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    height: 80vh;
-    color: #feda4a;
-    font-family: 'Pathway Gothic One', sans-serif;
-    font-size: 200%;
-    font-weight: 600;
-    letter-spacing: 6px;
-    perspective: 200px;
-    text-align: justify;
-    overflow: hidden;
-}
-
-.star-wars .content {
-    position: relative;
-    top: 100vh;
-    /* Commence en bas de l'écran 
-    transform-origin: 50% 100%;
-    transform: translateY(0) rotateX(25deg);*/
-}
-
-.present .star-wars .content {
-    animation: crawl 80s linear 7s forwards;
-}
-
-.star-wars .content>p {
-    font-size: 90%;
-}
-
-.star-wars .content .titre {
-    margin: 0 0 100px;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-@keyframes crawl {
-    0% {
-        /* The element starts below the screen */
-        top: 50vh;
-        /* Rotate the text 20 degrees but keep it close to the viewer */
-        transform: rotateX(20deg) translateZ(0);
-    }
-
-    100% {
-        /* This is a magic number, but using a big one to make sure the text is fully off the screen at the end */
-        top: -6000px;
-        /* Slightly increasing the rotation at the end and moving the text far away from the viewer */
-        transform: rotateX(25deg) translateZ(-2500px);
-    }
-}
-
-.opening {
-    width: 70%;
-    text-align: left;
-    margin-left: auto;
-    margin-top: 30vh;
+body:not(:has(.main-title.present))::after {
+    content: url("../images/devoxx.svg");
     position: fixed;
-    display: block ruby;
+    left: -720px;
+    bottom: -50px;
+    transform: scale(0.2);
 }
 
-.present .opening {
-    animation: disapear 5s linear forwards;
+.transparency.slide-background.present {
+    opacity: 1;
 }
 
-@keyframes disapear {
-    0% {
-        color: #4bd5ee;
-    }
-    80% {
-        color: #4bd5ee;
-    }
-
-    100% {
-        color: rgba(0, 0, 0, 0);
-    }
+.smaller {
+    font-size: 1.5rem;
 }
 
-.mockoon {
-    position: fixed;
-    width: 400vh; 
-    left: 50%;
-    top: 50%;
-    transform-origin: center center;
-    opacity: 0;
+.rounded > img {
+    border-radius: 2rem;
 }
 
-.present .mockoon {
-    animation: logo-zoom 8s ease-out forwards 6s;
+.main-title > h2 {
+    color: white !important;
 }
 
-@keyframes logo-zoom {
-    0% {
-        transform: translate(-50%, -55%) scale(1);
-        opacity: 1;
-    }
-    99%{
-        opacity: 1;
-    }
-    100% {
-        
-        transform: translate(-50%, -55%) scale(0.001);
-        opacity: 0;
-    }
+.presentation p {
+    color: white;
 }

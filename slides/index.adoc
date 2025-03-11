@@ -9,6 +9,9 @@
 :revealjs_pdfseparatefragments: false
 :customcss: css/custom.css
 
-= Hello, world !
+[.main-title]
+== Mockoon : les bouchons contre-attaquent !
+
+image::images/devoxx_landscape.png[background, size=fill]
 
 include::1.intro.adoc[]

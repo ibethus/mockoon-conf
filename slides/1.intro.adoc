@@ -13,12 +13,38 @@ image::images/mockoon.svg[]
 [.crawl]
 --
 [.titre]
-Mockoon : les bouchons contre attaquent !
+Mockoon : les bouchons contre-attaquent !
 
 Alors qu'ils travaillent d'arrache-pied sur le nouvel ERP de l'étoile de la mort, les développeurs impériaux se retrouvent soudainement sans accès à leur API...
 
-Un groupe de rebelles mené par un héros charismatique au nom oubliable a en effet coupé leur connexion, plongeant l'Empire dans le chaos du debug !
+Un groupe de rebelles mené par un héros charismatique au nom oubliable a en effet coupé leur connexion, plongeant ces professionnels de l'informatique dans le chaos du debug !
 
 L'Empereur n'a d'autre choix que de faire usage de son arme ultime pour remettre en marche la machine de guerre impériale : Mockoon, le serveur de mock !
 --
 ****
+
+[%notitle.columns.is-vcentered.presentation]
+=== Présentation
+
+image::images/etoiles[background, size=fill]
+
+[.column.has-text-right.is-two-fifth]
+****
+[.important-text]
+--
+*Ivan Béthus*
+
+Tech Lead
+--
+
+image:images/onepoint.svg[width=200]
+
+[.vertical-align-middle]
+icon:github[] ibethus
+****
+
+[.column]
+--
+[.rounded]
+image::images/ibethus.png[]
+--
