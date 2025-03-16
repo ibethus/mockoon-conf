@@ -4,18 +4,46 @@
 
 === 0. Introduction
 * Petite mise en contexte (3min l'empire contre-attaque)
-* Dans une galaxie très, très lointaine, les développeurs impériaux se retrouvaient soudainement sans accès à leur API...
-* Une attaque surprise des Rebelles avait coupé leur connexion, plongeant l'Empire dans le chaos du debug.
-* Armés de leurs claviers et d'un sens de l'humour gravé à la force, ils se lancent dans une quête épique pour rétablir l'ordre (et la connectivité) à la vitesse de la lumière.
 
 === 1. Qu'est-ce que Mockoon ?
+* Qu'est-ce qu'un mock ?
 * Serveur de mock 
 * Un GUI
 * Une CLI
 
 ==== 1.1 Présentation du GUI
-* Notion d'environnements
-* Notion d'endpoits
-** Configuration des endpoints (méthode, path, headers, body)
-** Configuration des réponses (status, headers, body -> template)
+* Environnements
+* Endpoints
+* Configuration des endpoints (méthode, path, headers, body)
+* Configuration des réponses (status, headers, body -> template)
+* Démo rapide avec route simple
 
+=== 2. Démo
+* Présentation rapide de la webapp
+
+=== 2.1 Swagger
+* Import du swagger
+* Création des routes
+* voir les données générées par Fakerjs
+* Exemple plus en détail du templating 
+* pas idéal car pas de cohérences entre les données
+* passage au databucket
+* Envoi de données en masse et démo de la pagination
+
+
+=== 2.2. Proxy
+* Montrer une route où on ne possède pas le swagger
+* Utilisation du proxy pour rediriger les requêtes vers le webservice réel + enregistrement des données
+* Transformer les données en template
+
+=== 2.3 Règles
+* Montrer comment implémenter une règle de filtrage sur les paramètres
+* Montrer comment lire un token JWT pour interdire potentiellement l'accès à une ressource
+* Montrer comment créer une règle sur une enveloppe SOAP
+
+=== 2.4. Déploiement du serveur de mock
+* Utilisation du cli conteneurisé
+
+=== 3. Conclusion + ouverture
+* Quelle plus-value comparé à Wiremock ?
+* Contribuer au projet

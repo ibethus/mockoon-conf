@@ -1,14 +1,25 @@
 @import url(star-wars.css);
 @import url(fonts.css);
+@import url(partie1.css);
 
 :root {
-    --r-background-color: #e7e7e7;
-    --r-main-color: #012d3f;
+    --r-background-color1: #E3F2E9;
+    --r-background-color2: #BADEC8;
+    --event-color: #85BD39;
+    --r-main-color: #245E52;
     --r-main-font: 'Titillium Web';
+}
+
+.reveal-viewport {
+    background: linear-gradient(to top, var(--r-background-color2), var(--r-background-color1));
 }
 
 .reveal .progress {
     height: 9px;
+    color: var(--event-color);
+}
+.reveal .controls-arrow {
+    color: var(--event-color);
 }
 
 code {
@@ -58,6 +69,7 @@ body::after {
     bottom: -30px;
     transform: scale(0.5);
     z-index: 1000;
+    filter: drop-shadow(1px 1px 2px #000000);
 }
 
 .transparency.slide-background.present {
@@ -74,10 +86,6 @@ body::after {
 
 .main-title > h2 {
     color: white !important;
-    text-shadow: 0 0 4px #000000;
-}
-
-.svg {
     text-shadow: 0 0 4px #000000;
 }
 
