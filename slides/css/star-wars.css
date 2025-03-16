@@ -61,19 +61,20 @@ section.introduction.background {
 }
 
 .opening {
-    width: 70%;
     text-align: left;
-    margin-left: auto;
-    margin-top: 30vh;
     position: fixed;
-    display: block ruby;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    display: block;
 }
 
 .present .opening {
-    animation: disapear 5s linear forwards;
+    animation: disappear 5s linear forwards;
 }
 
-@keyframes disapear {
+@keyframes disappear {
     0% {
         color: #4bd5ee;
     }
