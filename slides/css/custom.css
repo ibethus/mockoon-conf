@@ -51,12 +51,13 @@ ul li p {
     font-size: smaller;
 }
 
-body:not(:has(.main-title.present))::after {
-    content: url("../images/devoxx.svg");
-    position: fixed;
-    left: -720px;
-    bottom: -50px;
-    transform: scale(0.2);
+body::after {
+    content: url("../images/logo_event.svg");
+    position: absolute;    
+    left: -200px;
+    bottom: -30px;
+    transform: scale(0.5);
+    z-index: 1000;
 }
 
 .transparency.slide-background.present {
@@ -73,6 +74,11 @@ body:not(:has(.main-title.present))::after {
 
 .main-title > h2 {
     color: white !important;
+    text-shadow: 0 0 4px #000000;
+}
+
+.svg {
+    text-shadow: 0 0 4px #000000;
 }
 
 .presentation p {

@@ -12,6 +12,6 @@
 [.main-title]
 == Mockoon : les bouchons contre-attaquent !
 
-image::images/devoxx_landscape.png[background, size=fill]
+image::images/background.jpg[background, size=fill]
 
 include::1.intro.adoc[]
