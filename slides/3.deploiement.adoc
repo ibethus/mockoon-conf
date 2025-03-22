@@ -1,0 +1,63 @@
+== Et ensuite ?
+
+[%auto-animate]
+=== Déploiement
+
+[%auto-animate]
+=== Déploiement
+Trois outils :
+
+[.step]
+* Un package npm : **mockoon-cli**
+* Une image docker : **mockoon\cli**
+* Une GitHub Action : **mockoon/cli-action@v2**
+
+[%auto-animate]
+=== mockoon-cli
+[step=1]
+[source, shell]
+----
+npm install -g @mockoon/cli
+----
+
+[step=2]
+[source, shell]
+----
+mockoon-cli start --data clones.json
+----
+
+[%notitle]
+=== mockoon-cli
+
+[source, shell]
+----
+mockoon-cli start \
+ --data clones.json planetes.json \
+ --port 3000 3001
+----
+
+=== Docker
+
+[source, shell]
+----
+mockoon-cli dockerize \
+ --data clones.json planetes.json \
+ --port 3000 3001 \
+ --output ./Dockerfile
+----
+
+[%notitle]
+=== Docker
+
+[source, shell]
+----
+docker build -t clones_mocks .
+----
+
+[%notitle]
+=== Docker
+
+[source, shell]
+----
+docker run -d -p 3000:3000 -p 3001:3001 clones_mocks
+----

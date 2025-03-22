@@ -8,6 +8,7 @@
 :revealjs_history: true
 :revealjs_pdfseparatefragments: false
 :customcss: css/custom.css
+:favicon: ./favicon.ico
 
 [.main-title]
 == Mockoon : les bouchons contre-attaquent !
@@ -16,3 +17,5 @@ image::images/background.jpg[background, size=fill]
 
 include::1.intro.adoc[]
 include::2.mockoon.adoc[]
+include::3.deploiement.adoc[]
+include::4.conclusion.adoc[]

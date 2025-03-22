@@ -1,0 +1,21 @@
+== Time's up !
+
+=== Mockoon vs Wiremock
+
+[.align-left]
+****
+[.fade-left, step=1]
+✅️ Plus rapide à mettre en place
+[.fade-right, step=2]
+✅️ Plus simple à configurer
+[.fade-left, step=3]
+❌️ Moins de fonctionnalités
+****
+
+=== Contribuer
+
+https://github.com/mockoon 
+
+=== Merci !
+
+image::./images/qrcode.png[width=200px]
