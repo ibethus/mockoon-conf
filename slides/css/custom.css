@@ -1,6 +1,8 @@
 @import url(star-wars.css);
 @import url(fonts.css);
 @import url(partie1.css);
+@import url(partie2.css);
+@import url(partie4.css);
 
 :root {
     --r-background-color1: #E3F2E9;

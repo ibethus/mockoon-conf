@@ -1,0 +1,151 @@
+/* Configuration du nuage de fonctionnalités */
+.feature-item {
+    position: fixed;
+    animation-name: float-feature;
+    animation-duration: 10s;
+    /* Durée augmentée pour une animation plus douce */
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    opacity: 0;
+    transform-origin: center center;
+}
+
+@keyframes float-feature {
+    0% {
+        opacity: 0;
+        transform: translateY(100%) scale(0.5) rotate(0deg);
+    }
+
+    10% {
+        opacity: 0.4;
+        transform: translateY(0) scale(1) rotate(var(--rotation));
+    }
+
+    40% {
+        opacity: 0.4;
+        transform: translateY(0) scale(1) rotate(var(--rotation));
+    }
+
+    50% {
+        opacity: 0;
+        transform: translateY(-100%) scale(0.5) rotate(0deg);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-100%) scale(0.5) rotate(0deg);
+    }
+}
+
+/* Distribution uniforme sur l'écran avec rotations aléatoires - éloigné du centre */
+.feature-item:nth-child(1) {
+    --rotation: -5deg;
+    left: 3%;
+    top: 5%;
+    animation-delay: 0s;
+}
+
+.feature-item:nth-child(2) {
+    --rotation: 3deg;
+    left: 25%;
+    top: 8%;
+    animation-delay: 1.5s;
+}
+
+.feature-item:nth-child(3) {
+    --rotation: -2deg;
+    left: 65%;
+    top: 4%;
+    animation-delay: 3s;
+}
+
+.feature-item:nth-child(4) {
+    --rotation: 4deg;
+    left: 85%;
+    top: 7%;
+    animation-delay: 4.5s;
+}
+
+.feature-item:nth-child(5) {
+    --rotation: -3deg;
+    left: 5%;
+    top: 22%;
+    animation-delay: 6s;
+}
+
+.feature-item:nth-child(6) {
+    --rotation: 2deg;
+    left: 80%;
+    top: 20%;
+    animation-delay: 7.5s;
+}
+
+.feature-item:nth-child(7) {
+    --rotation: -4deg;
+    left: 78%;
+    top: 25%;
+    animation-delay: 8s;
+}
+
+.feature-item:nth-child(8) {
+    --rotation: 3deg;
+    left: 15%;
+    top: 42%;
+    animation-delay: 15s;
+}
+
+.feature-item:nth-child(9) {
+    --rotation: -2deg;
+    left: 2%;
+    top: 45%;
+    animation-delay: 12s;
+}
+
+.feature-item:nth-child(10) {
+    --rotation: 5deg;
+    left: 82%;
+    top: 38%;
+    animation-delay: 13.5s;
+}
+
+.feature-item:nth-child(11) {
+    --rotation: -3deg;
+    left: 8%;
+    top: 58%;
+    animation-delay: 15s;
+}
+
+.feature-item:nth-child(12) {
+    --rotation: 2deg;
+    left: 38%;
+    top: 65%;
+    animation-delay: 16.5s;
+}
+
+.feature-item:nth-child(13) {
+    --rotation: -4deg;
+    left: 62%;
+    top: 60%;
+    animation-delay: 18s;
+}
+
+.feature-item:nth-child(14) {
+    --rotation: 3deg;
+    left: 88%;
+    top: 62%;
+    animation-delay: 19.5s;
+}
+
+.feature-item:nth-child(15) {
+    --rotation: -2deg;
+    left: 25%;
+    top: 78%;
+    animation-delay: 21s;
+}
+
+.feature-item:nth-child(16) {
+    --rotation: 4deg;
+    left: 70%;
+    top: 80%;
+    animation-delay: 22.5s;
+}

@@ -1,15 +1,4 @@
-== C'est quoi, un bouchon ?
-
-[%step]
-* Un stub
-* Un mock
-* Un __dummy__
-* ...
-
-[NOTE.speaker]
---
-En gros, tout ce qui peux se substituer à une valeur réelle.
---
+==  Quel est le problème ?
 
 [%notitle, transition=fade]
 === problème
@@ -23,6 +12,9 @@ EtoileDeLaMortBackend.java
 ++++
 include::images/front-back-connection.svg[size=fill]
 ++++
+
+[.low]
+Situation initiale
 
 [%notitle, transition=fade]
 === problème
@@ -43,7 +35,7 @@ include::images/front-back-connection.svg[size=fill]
 
 
 [%notitle, transition=fade]
-=== problème
+=== Élément perturbateur
 
 ++++
 include::images/front-back-connection.svg[size=fill]
@@ -52,8 +44,12 @@ include::images/front-back-connection.svg[size=fill]
 [.cross]
 image::images/cross.svg[]
 
+[.low]
+Element perturbateur
+
 [%notitle.with-mockoon, transition=fade]
 === problème
+--
 
 ++++
 include::images/front-back-connection.svg[size=fill]
@@ -62,4 +58,6 @@ include::images/front-back-connection.svg[size=fill]
 [.mock]
 image::images/mockoon.svg[]
 
-=== Démo !
+[.low]
+Résolution
+--
