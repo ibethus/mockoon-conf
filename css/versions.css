@@ -12,7 +12,8 @@ h1 {
     color: #2c3e50;
     margin-top: 2rem;
     font-weight: 300;
-    font-size: 2.5rem;
+    font-size: 8rem;
+    font-weight: bold;
 }
 
 ul {
@@ -28,7 +29,7 @@ li {
 a {
     text-decoration: none;
     color: #34495e;
-    font-size: 1.2rem;
+    font-size: 5rem;
     padding: 0.5rem 1rem;
     border-radius: 4px;
     transition: all 0.3s ease;
@@ -36,5 +37,4 @@ a {
 
 a:hover {
     background-color: rgba(52, 73, 94, 0.1);
-    transform: translateY(-2px);
 }
