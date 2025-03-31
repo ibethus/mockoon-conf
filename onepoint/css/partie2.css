@@ -1,0 +1,6 @@
+.low {
+    position: fixed;
+    bottom: 3rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+}

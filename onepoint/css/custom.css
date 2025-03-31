@@ -1,0 +1,96 @@
+@import url(star-wars.css);
+@import url(fonts.css);
+@import url(partie1.css);
+@import url(partie2.css);
+@import url(partie4.css);
+
+:root {
+    --r-background-color1: #edfbff;
+    --r-background-color2: #e6f4f1;
+    --event-color: #0092CB;
+    --r-main-color: #6396ba;
+    --r-main-font: 'Titillium Web';
+}
+
+.reveal-viewport {
+    background: linear-gradient(to top, var(--r-background-color2), var(--r-background-color1));
+}
+
+.reveal .progress {
+    height: 9px;
+    color: var(--event-color);
+}
+.reveal .controls-arrow {
+    color: var(--event-color);
+}
+
+code {
+    border-radius: 0.3rem;
+    padding: 0.7rem !important; 
+}
+
+.admonitionblock.warning {
+    background-color: #ff000043;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 10px 3px #6d6d6d56;
+}
+
+.admonitionblock.important {
+    background-color: #ffae0088;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 10px 3px #6d6d6d56;
+}
+
+.admonitionblock.tip {
+    background-color: #04ff0043;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 10px 3px #6d6d6d56;
+}
+
+.conum {
+    width: 2rem !important;
+    height: 2rem !important;
+    font-size: 1.2rem !important;
+    line-height: 2.1rem !important;
+}
+
+.colist td {
+    font-size: 1.5rem !important;
+}
+
+ul li p {
+    font-size: smaller;
+}
+
+body::after {
+    content: url("../images/logo_event.svg");
+    position: absolute;    
+    left: 150px;
+    bottom: 50px;
+    transform: scale(3);
+    z-index: 1000;
+    filter: drop-shadow(1px 1px 2px #00000093);
+}
+
+.transparency.slide-background.present {
+    opacity: 1;
+}
+
+.smaller {
+    font-size: 1.5rem;
+}
+
+.rounded > img {
+    border-radius: 2rem;
+}
+
+.main-title > h2 {
+    padding-left: 15rem;
+    width: 90%;
+    color: white !important;
+    text-shadow: 0 0 4px #000000;
+}
+
+.presentation p {
+    color: white;
+}

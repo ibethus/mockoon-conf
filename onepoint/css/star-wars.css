@@ -1,0 +1,116 @@
+
+section.introduction.background {
+    background-color: black;
+}
+
+.star-wars {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 80vh;
+    color: #feda4a;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 200%;
+    font-weight: 600;
+    letter-spacing: 6px;
+    perspective: 200px;
+    text-align: justify;
+    overflow: hidden;
+}
+
+.star-wars .content {
+    position: relative;
+    top: 100vh;
+    /* Commence en bas de l'écran 
+    transform-origin: 50% 100%;
+    transform: translateY(0) rotateX(25deg);*/
+}
+
+.present .star-wars .content {
+    animation: crawl 90s linear 7s forwards;
+}
+
+.star-wars .content>p {
+    font-size: 90%;
+}
+
+.star-wars .content .titre {
+    margin: 0 0 100px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+@keyframes crawl {
+    0% {
+        /* The element starts below the screen */
+        top: 50vh;
+        /* Rotate the text 20 degrees but keep it close to the viewer */
+        transform: rotateX(20deg) translateZ(0);
+    }
+
+    99%{
+        opacity: 1;
+    }
+    100% {
+        /* This is a magic number, but using a big one to make sure the text is fully off the screen at the end */
+        top: -6000px;
+        /* Slightly increasing the rotation at the end and moving the text far away from the viewer */
+        transform: rotateX(25deg) translateZ(-2500px);
+        opacity: 0;
+    }
+}
+
+.opening {
+    text-align: left;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    display: block;
+}
+
+.present .opening {
+    animation: disappear 5s linear forwards;
+}
+
+@keyframes disappear {
+    0% {
+        color: #4bd5ee;
+    }
+    80% {
+        color: #4bd5ee;
+    }
+
+    100% {
+        color: rgba(0, 0, 0, 0);
+    }
+}
+
+.mockoon {
+    position: fixed;
+    width: 400vh; 
+    left: 50%;
+    top: 50%;
+    transform-origin: center center;
+    opacity: 0;
+}
+
+.present .mockoon {
+    animation: logo-zoom 8s ease-out forwards 6s;
+}
+
+@keyframes logo-zoom {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+    99%{
+        opacity: 1;
+    }
+    100% {
+        
+        transform: translate(-50%, -50%) scale(0.001);
+        opacity: 0;
+    }
+}
