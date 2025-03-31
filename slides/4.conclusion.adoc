@@ -10,6 +10,7 @@
 ❌️ Moins de fonctionnalités
 ****
 
+[transition=fade]
 === Contribuer
 
 https://github.com/mockoon 
