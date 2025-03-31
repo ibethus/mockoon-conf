@@ -22,16 +22,6 @@ jobs:
           cp -r index.html assets css slides/build/
         working-directory: .
 
-      - name: Create versions file 📄
-        run: |
-          echo '<link rel="stylesheet" href="css/versions.css"><html lang="fr"><head><meta charset="UTF-8"><title>Versions</title></head><body><h1>Versions</h1><ul>' > versions.html
-          git tag | while read -r tag; do
-            echo "$tag"
-            echo "<li><a href=/"$tag">$tag</a></li>" >> versions.html
-          done
-          echo '</ul></body></html>' >> versions.html
-        working-directory: slides/build/
-
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
