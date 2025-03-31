@@ -13,27 +13,17 @@
 @keyframes float-feature {
     0% {
         opacity: 0;
-        transform: translateY(100%) scale(0.5) rotate(0deg);
-    }
-
-    10% {
-        opacity: 0.4;
-        transform: translateY(0) scale(1) rotate(var(--rotation));
-    }
-
-    40% {
-        opacity: 0.4;
-        transform: translateY(0) scale(1) rotate(var(--rotation));
+        transform: scale(0.3);
     }
 
     50% {
-        opacity: 0;
-        transform: translateY(-100%) scale(0.5) rotate(0deg);
+        opacity: 0.4;
+        transform: scale(0.5);
     }
 
     100% {
         opacity: 0;
-        transform: translateY(-100%) scale(0.5) rotate(0deg);
+        transform: scale(1);
     }
 }
 
