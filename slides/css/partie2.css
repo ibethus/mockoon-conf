@@ -4,3 +4,27 @@
     left: 50%;
     transform: translate(-50%, 0);
 }
+
+#_openapi {
+    height: 60vh;
+    overflow-y: auto;
+    margin: 20px 0;
+    scrollbar-color: var(--event-color) var(--r-background-color1);
+    scrollbar-width: thin;
+}
+
+.swagger-ui .wrapper {
+    padding: 0;
+}
+
+.topbar {
+    display: none;
+}
+
+.swagger-ui  {
+    font-size: medium;
+}
+
+.swagger-ui svg:not(:root) {
+    display: none;
+}
