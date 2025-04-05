@@ -1,7 +1,5 @@
-== Et ensuite ?
-
 [%auto-animate]
-=== Déploiement
+== Déploiement
 
 [%auto-animate]
 === Déploiement

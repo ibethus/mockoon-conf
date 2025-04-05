@@ -1,7 +1,5 @@
-==  Quel est le problème ?
-
 [%notitle, transition=fade]
-=== problème
+==  Quel est le problème ?
 
 [.description-front]
 etoile-delamort-frontend.js
