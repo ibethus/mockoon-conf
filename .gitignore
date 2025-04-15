@@ -1,4 +1,4 @@
 slides/reveal.js/*
-slides/*.html
+slides/index.html
 .vscode/*
 **/reveals.js/*
