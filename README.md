@@ -50,4 +50,4 @@ La démo associée est disponible sur [ce dépôt](https://github.com/ibethus/mo
 
 ## 📝 License
 
-Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE.md) pour plus de détails.
+Ce projet est sous licence MIT - voir le fichier [LICENSE](./LICENSE.md) pour plus de détails.
