@@ -1,19 +1,53 @@
-# Mockoon : les bouchons contre-attaquent !
+# 🦝 Mockoon : les bouchons contre-attaquent !
 
-## Description
+![License](https://img.shields.io/badge/license-MIT-green)
+![Reveal.js](https://img.shields.io/badge/reveal.js-4.5.0-yellow)
+![Asciidoctor](https://img.shields.io/badge/asciidoctor-2.0-blue)
+
+## 📝 Description
+
 Ce dépôt présente l'ensemble des sources de la conférence `Mockoon : les bouchons contre attaquent !`
+Découvrez comment simuler vos services web en quelques clics et accélérer votre développement.
 
-## Démo
-La démo associée est disponible [ici](https://github.com/ibethus/mockoon-conf-demo).
+## 🚀 Générer les slides
 
-## Générer les slides en local
+### Installation
 
-1. Télécharger `reveal.js`, le dézipper dans le répertoire `slides` et nommer le répertoire `reveal.js` : https://github.com/hakimel/reveal.js/archive/master.zip
-
-
-2. Lancer les commandes suivantes :
-```
-docker container run --rm -u $(id -u):$(id -g) -v $(pwd):/documents asciidoctor/docker-asciidoctor:1.65 asciidoctor-revealjs index.adoc
+1. Clonez le dépôt :
+```bash
+git clone https://github.com/ibethus/mockoon-conf.git
+cd mockoon-conf
 ```
 
-3. Ouvrir le fichier index.html généré.
+2. Téléchargez Reveal.js :
+```bash
+wget https://github.com/hakimel/reveal.js/archive/master.zip
+unzip master.zip -d slides
+mv slides/reveal.js-master slides/reveal.js
+rm master.zip
+```
+
+3. Générez les slides :
+```bash
+docker container run --rm \
+  -u $(id -u):$(id -g) \
+  -v $(pwd):/documents \
+  asciidoctor/docker-asciidoctor:1.65 \
+  asciidoctor-revealjs index.adoc
+```
+
+4. Ouvrez `index.html` dans votre navigateur !
+
+## 🎮 Démo
+
+La démo associée est disponible sur [ce dépôt](https://github.com/ibethus/mockoon-conf-demo).
+
+## 📚 Documentation
+
+- [Documentation Mockoon](https://mockoon.com/docs/latest/about/)
+- [Guide Reveal.js](https://revealjs.com/)
+- [Asciidoctor Reveal.js](https://docs.asciidoctor.org/reveal.js-converter/latest/)
+
+## 📝 License
+
+Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de détails.
