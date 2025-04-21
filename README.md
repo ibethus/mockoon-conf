@@ -49,6 +49,7 @@ La démo associée est disponible sur [ce dépôt](https://github.com/ibethus/mo
 - [Documentation Mockoon](https://mockoon.com/docs/latest/about/)
 - [Guide Reveal.js](https://revealjs.com/)
 - [Asciidoctor Reveal.js](https://docs.asciidoctor.org/reveal.js-converter/latest/)
+- La palette de couleur est générée grâce à https://www.figma.com/color-palette-generator/
 
 ## 📝 License
 
