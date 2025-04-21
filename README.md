@@ -9,6 +9,8 @@
 Ce dépôt présente l'ensemble des sources de la conférence `Mockoon : les bouchons contre attaquent !`
 Découvrez comment simuler vos services web en quelques clics et accélérer votre développement.
 
+L'article associé sur mon blog est disponible [ici](https://blog.hot-coffee.dev/blog/mockoon_conf/)
+
 ## 🚀 Générer les slides
 
 ### Installation
