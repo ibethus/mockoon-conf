@@ -5,10 +5,10 @@
 @import url(partie4.css);
 
 :root {
-    --r-background-color1: #E3F2E9;
-    --r-background-color2: #BADEC8;
-    --event-color: #85BD39;
-    --r-main-color: #245E52;
+    --r-background-color1: #FFFEFD;
+    --r-background-color2: #FDEAC2;
+    --event-color: #FAC04A;
+    --r-main-color: #D63E4A;
     --r-main-font: 'Titillium Web';
 }
 
@@ -65,11 +65,10 @@ ul li p {
 body::after {
     content: url("../images/logo_event.svg");
     position: absolute;    
-    left: -200px;
-    bottom: -30px;
-    transform: scale(0.5);
+    left: -25%;
+    bottom: -45%;
+    transform: scale(0.15);
     z-index: 1000;
-    filter: drop-shadow(1px 1px 2px #000000);
 }
 
 .transparency.slide-background.present {
