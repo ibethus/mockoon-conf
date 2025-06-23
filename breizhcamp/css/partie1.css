@@ -1,0 +1,87 @@
+svg {
+    width: 100%;
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.description-front {
+    font-size: 2rem;
+    text-align: left;
+    width: 30rem;
+    position: fixed;
+    left: 5rem;
+    top: 13rem;
+}
+
+.description-back {
+    font-size: 2rem;
+    text-align: left;
+    width: 30rem;
+    position: fixed;
+    right: -5rem;
+    top: 8rem;
+}
+
+.dialog1 {
+    font-size: 2rem;
+    text-align: left;
+    width: 30rem;
+    position: fixed;
+    left: 5rem;
+    bottom: 8rem;
+}
+
+.dialog2 {
+    font-size: 2rem;
+    text-align: left;
+    width: 30rem;
+    position: fixed;
+    right: -5rem;
+    bottom: 13rem;
+}
+
+.dialog3 {
+    font-size: 2rem;
+    text-align: left;
+    width: 30rem;
+    position: fixed;
+    left: 13rem;
+    bottom: 10rem;
+}
+
+.cross {
+    position: fixed;
+    top: 47.5%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    width: 10rem;
+    fill: red;
+}
+
+section[data-fragment="0"] #fleche2{
+    display: none;
+}
+section[data-fragment="1"] #fleche1{
+    display: none;
+}
+
+section[data-fragment="-1"] #fleche1, section[data-fragment="-1"] #fleche2{
+    display: none;
+}
+section[data-fragment="2"] #fleche1, section[data-fragment="2"] #fleche2{
+    display: none;
+}
+
+.with-mockoon svg #neptune {
+    display: none;
+}
+
+.with-mockoon .mock {
+    position: fixed;
+    top: 39%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    width: 10rem;
+}
