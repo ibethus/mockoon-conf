@@ -65,8 +65,8 @@ ul li p {
 body::after {
     content: url("../images/logo_event.svg");
     position: absolute;    
-    left: -280px;
-    bottom: -70px;
+    left: -270px;
+    bottom: -50px;
     transform: scale(0.4);
     z-index: 1000;
     filter: drop-shadow(1px 1px 2px #000000);
