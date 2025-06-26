@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  title: API de Gestion des clones
+  title: Service de Gestion des clones
   version: 1.0.0
   description: Interface pour gérer l'état et le statut des clones
 
